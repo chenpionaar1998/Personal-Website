@@ -1,0 +1,94 @@
+div.container {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+    min-height: 900px;
+}
+
+div.name_holder {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+    position: relative;
+}
+
+div.name_holder a {
+    font-family: 'Cabin', sans-serif;
+    font-size: 500%;
+    margin-top: 5%;
+    text-decoration: none;
+    color: black;
+    transition: all ease-in-out 200ms;
+    backface-visibility: hidden;
+}
+
+div.name_holder:hover {
+    font-size: 120%;
+    transition: all ease-in-out 200ms;
+    backface-visibility: hidden;
+}
+
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-bottom: 0.5%;
+    position: relative;
+}
+
+li.Projects, li.Resume, li.Contact, li.line_end {
+    margin-left: 5%;
+}
+
+li.line, li.line_end {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: black;
+
+    bottom: 0px;
+    width: 20px;
+}
+
+nav a {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a:before { 
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: orangered;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0px;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+b {
+    font-size: 18px;
+}

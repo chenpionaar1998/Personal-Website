@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dean Chiu - Welcome</title>
+        <link id="page_style_share" href="css/regular/styles.css" type="text/css" rel="stylesheet">
+        <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/index_style.css">
+        <script type="text/javascript">
+            function layoutHandler() {
+                var style_link_share = document.getElementById("page_style_share");
+                var style_link = document.getElementById("page_style");
+
+                if (window.innerWidth < 700) {
+                    style_link_share.setAttribute("href", "css/mobile/styles_mobile.css");
+                    style_link.setAttribute("href", "css/mobile/index_style_mobile.css");
+                }
+                else if (window.innerWidth < 1200) {
+                    style_link_share.setAttribute("href", "css/regular/styles.css");
+                    style_link.setAttribute("href", "css/regular/index_style_medium.css");
+                }
+                else {
+                    style_link_share.setAttribute("href", "css/regular/styles.css");
+                    style_link.setAttribute("href", "css/regular/index_style.css");
+                }
+            }
+
+            window.onresize = layoutHandler;
+            layoutHandler();
+        </script>
+        <base href="/">
+        <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body class="container">
+        <header>
+            <div class='container'>
+                    <div class="name_holder">
+                        <a href="/index">Dean Chiu</a>
+                    </div>
+            </div>
+            <div>
+                <nav>
+                    <li class="Home"><a href="/index" style="color: orangered; opacity: 0.8;">Home</a></li>
+                    <li class="Projects"><a href="/projects">Projects</a></li>
+                    <li class="Resume"><a href="https://drive.google.com/file/d/1JduRECdY_RbQOUPJM_dI4q9OTiJvlFGr/view?usp=sharing">Resume</a></li>
+                    <li class="Contact"><a href="/contact">Contact</a></li>
+                </nav>
+            </div>
+        </header>
+        <div class="body_div">
+            <img class="person_img" src="assets/Person.jpg">
+            <div style="display: table; height: 350px; overflow: hidden;">
+                <div style="display: table-cell; vertical-align: middle;">
+                    <p class="index_content">
+                            Hi there,<br>
+                                my name is Dean Chiu and I am a third year <b>computer science</b> student in <b>Simon Fraser University</b>. 
+                                I love and enjoy making things that I can share with others. Learn more about what I made and lets get in touch!
+                        </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

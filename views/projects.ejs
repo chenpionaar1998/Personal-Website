@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dean Chiu - Projects</title>
+        <base href="/">
+        <link id="page_style_share" href="css/regular/styles.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+            function layoutHandler() {
+                var style_link_share = document.getElementById("page_style_share");
+
+                if (window.innerWidth < 500) {
+                    style_link_share.setAttribute("href", "css/mobile/styles_mobile.css");
+                }
+                else {
+                    style_link_share.setAttribute("href", "css/regular/styles.css");
+                }
+            }
+
+            window.onresize = layoutHandler;
+            layoutHandler();
+        </script>
+        <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body class="container">
+        <header>
+            <div class='container'>
+                    <div class="name_holder">
+                        <a href="/index">Dean Chiu</a>
+                    </div>
+            </div>
+            <div>
+                <nav>
+                    <li class="Home"><a href="/index">Home</a></li>
+                    <li class="Projects"><a href="/projects" style="color: orangered; opacity: 0.8;">Projects</a></li>
+                    <li class="Resume"><a href="https://drive.google.com/file/d/1JduRECdY_RbQOUPJM_dI4q9OTiJvlFGr/view?usp=sharing">Resume</a></li>
+                    <li class="Contact"><a href="/contact">Contact</a></li>
+                </nav>
+            </div>
+            
+
+            
+        </header>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+html {
+    height: 100%;  
+}
+body {
+    min-height: 100%;
+}
+
+div.body_div {
+    margin-top: 60px;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+
+img.person_img {
+    width: 288px;
+    height: 432px;
+    margin-right: 3vw;
+    float: left;
+}
+
+p.index_content {
+    vertical-align: baseline;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+html {
+    height: 100%;  
+}
+body {
+    min-height: 100%;
+}
+
+div.body_div {
+    margin-top: 60px;
+    text-align: center;
+}
+
+img.person_img {
+    width: 288px;
+    height: 432px;
+}
+
+p.index_content {
+    vertical-align: baseline;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
