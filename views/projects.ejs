@@ -13,9 +13,13 @@
             var style_link_share = document.getElementById("page_style_share");
             var style_link = document.getElementById("page_style");
 
-            if (window.innerWidth < 500) {
+            if (window.innerWidth < 1450) {
                 style_link_share.setAttribute("href", "css/mobile/styles_mobile.css");
                 style_link.setAttribute("href", "css/mobile/projects_style_mobile.css");
+            }
+            else if (window.innerWidth < 1600) {
+                style_link_share.setAttribute("href", "css/regular/styles.css");
+                style_link.setAttribute("href", "css/regular/projects_style_medium.css");
             }
             else {
                 style_link_share.setAttribute("href", "css/regular/styles.css");
@@ -60,10 +64,10 @@
                     <br />
                     <b>Office Lens</b> is an intelligent document scanner that utilizes machine learning API to
                     precisely find
-                    and crop documents from a photo. During my Spring 2019
+                    and crop documents from photos. During my Spring 2019
                     internship in Microsoft, I worked closely with designers and developers and integrated the Office
-                    Lens feature into the <b>Windos 10 Photos App</b>. As a highly requested
-                    featur from the Photos App users, the document scanner supports types such as document, whiteboard,
+                    Lens feature into the <b>Windows 10 Photos App</b>. As a highly requested
+                    feature from the Photos App users, the document scanner supports types such as document, whiteboard,
                     and business card. To try out the new feature, constantly check and
                     follow the Windows updates.
                 </div>
@@ -80,12 +84,12 @@
                     <br />
                     <b>Google CodeU</b> is a program hosted by Google where university students from all around the
                     world gather to learn and thrive by working together as a team.
-                    During this program, my team collabratively created a web chat app that supports realtime message
-                    broadcasting and also utilized the Google Cloud Vision API to intelligentally tell users
+                    During this program, my team collaboratively created a web chat app that supports real-time message
+                    broadcasting and utilized the Google Cloud Vision API to intelligentially tell users
                     details of the image sent in the chatroom.
                     This is the first real life project that I worked on where I learned the skills about working in a
                     team
-                    and also grew knowledge in real life production development cycle by doing rigorous testings and
+                    and grew knowledge in real life production development cycle by doing rigorous testing and
                     code reviews with my peers. To learn more information about how to join this program, feel free to
                     check out the source code hosted on <a class="inline-link"
                         href="https://github.com/chenpionaar1998/CodeU_Spring_2018">Github</a> or contact me via
@@ -102,10 +106,10 @@
                     <b>Network Tracing with WireShark<br /></b>
                     <br />
                     <br />
-                    <b>Network tracing</b> is a school project that I find particullarly interesting, it opened the door
+                    <b>Network tracing</b> is a school project that I find particularly interesting, it opened the door
                     of
-                    knowing what is really happening behind the scene on the largest infrustructure mankind has created.
-                    During this project, I learned about all the protocals used and all the information required simply
+                    knowing what is really happening behind the scene on the largest infrastructure mankind has created.
+                    During this project, I learned about all the protocols used and all the information required simply
                     to fetch a page. By getting hands on experience, the step by step workflow becomes clear and
                     easier to understand.
                 </div>
@@ -120,10 +124,10 @@
                     <b>Roids<br /></b>
                     <br />
                     <br />
-                    <b>Roids</b> is a text based game written with python during the first term of my computer science
+                    <b>Roids</b> is a text-based game written with python during the first term of my computer science
                     degree. This project is extremely simple as the main purpose of it is to get familiar with the
                     concepts of loops and statements. Despite it being simple, I enjoyed the team working game creation
-                    process and some of the creative solutions we came up with to resolve certain obsticles. To learn
+                    process and some of the creative solutions we came up with to resolve certain obstacles. To learn
                     more about this project, feel free to
                     check out the source code hosted on <a class="inline-link"
                         href="https://github.com/chenpionaar1998/Roids">Github</a> or contact me via
@@ -133,7 +137,7 @@
         </div>
     </div>
     <br />
-    <div style="text-align:center">
+    <div style="text-align:center; margin-top: 35px;">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>

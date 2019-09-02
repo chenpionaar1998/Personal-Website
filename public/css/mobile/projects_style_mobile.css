@@ -2,62 +2,123 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  margin-top: 60px;
+  width: 100%;
   position: relative;
-  margin: auto;
+  text-align: center;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container1 {
+  width: 100%;
+  max-height: 500px;
   text-align: center;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.image-container2 {
+  width: 100%;
+  max-height: 500px;
+  text-align: center;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.image-container3 {
+  width: 100%;
+  max-height: 500px;
+  text-align: center;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.image-container4 {
+  width: 100%;
+  max-height: 500px;
+  text-align: center;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+.image{
+  max-width: 100%;
+  max-height: 500px;
+  width:auto;
+  height:auto;
+  object-fit: contain;
+}
+
+.table1 {
+  display: table;
+  height: auto;
+  overflow: hidden;
+  margin-top: 60px;
   width: 100%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.table2 {
+  display: table;
+  height: auto;
+  overflow: hidden;
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.table3 {
+  display: table;
+  height: auto;
+  overflow: hidden;
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.table4 {
+  display: table;
+  height: auto;
+  overflow: hidden;
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.table-cell1 {
+  display: table-cell;
+}
+
+.table-cell2 {
+  display: table-cell;
+}
+
+.table-cell3 {
+  display: table-cell;
+}
+
+.table-cell4 {
+  display: table-cell;
+}
+
+/* Caption text */
+.text {
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.inline-link:link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.inline-link:visited{
+  color: black;
+  text-decoration: none;
 }
 
 /* The dots/bullets/indicators */
@@ -93,3 +154,4 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
