@@ -3,6 +3,10 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }  
+
 // Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
@@ -55,15 +59,9 @@ function handleTouchMove (evt) {
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
         if ( xDiff > 0 ) {
-            /* left swipe */ 
-            if (slideIndex < 4) {
-                showSlides(slideIndex + 1);
-            }
+            plusSlides(1);
         } else {
-            /* right swipe */
-            if (slideIndex > 0) {
-                showSlides(slideIndex - 1);
-            }
+            plusSlides(-1);
         }                       
     } 
     /* reset values */
