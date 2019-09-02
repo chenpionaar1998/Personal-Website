@@ -23,3 +23,50 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+// Swipe gestures
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = 0;
+var yDown = 0;
+
+function getTouches(evt) {
+    return evt.touches || evt.originalEvent.touches;
+}
+
+function handleTouchStart (evt) {
+    const initialPos = getTouches(evt)[0];
+    xDown =  initialPos.clientX;
+    yDown = initialPos.clientY;
+}
+
+function handleTouchMove (evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+        if ( xDiff > 0 ) {
+            /* left swipe */ 
+            if (slideIndex < 4) {
+                showSlides(slideIndex + 1);
+            }
+        } else {
+            /* right swipe */
+            if (slideIndex > 0) {
+                showSlides(slideIndex - 1);
+            }
+        }                       
+    } 
+    /* reset values */
+    xDown = null;
+    yDown = null;   
+}
