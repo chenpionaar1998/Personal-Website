@@ -7,6 +7,8 @@
         <link id="page_style_share" rel="stylesheet" type="text/css" href="css/regular/styles.css">
         <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/contacts_style.css">
         <script type="text/javascript">
+            var resizeId;
+
             function layoutHandler() {
                 var style_link_share = document.getElementById("page_style_share");
                 var style_link = document.getElementById("page_style");
@@ -21,8 +23,10 @@
                 }
             }
 
-            window.onresize = layoutHandler;
-            layoutHandler();
+            window.addEventListener('resize', function(){
+                clearTimeout(resizeId);
+                resizeId = setTimeout(layoutHandler, 500);
+            });
         </script>
         <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
         <base href="/">
@@ -72,7 +76,7 @@
                         <div class="contact_list_container">
                             <a href="https://linkedin.com/in/twc10">
                                 <div class="circle_li">
-                                    <img src="assets/linkedin-logo.svg">
+                                    <img src="assets/icons8-linkedin-logo.svg">
                                 </div>
                             </a>
                             <h3 class="contact_list_title"><a href="https://linkedin.com/in/twc10">linkedin</a></h3>

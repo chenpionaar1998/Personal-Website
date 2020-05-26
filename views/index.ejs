@@ -6,6 +6,8 @@
         <link id="page_style_share" href="css/regular/styles.css" type="text/css" rel="stylesheet">
         <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/index_style.css">
         <script type="text/javascript">
+            var resizeId;
+
             function layoutHandler() {
                 var style_link_share = document.getElementById("page_style_share");
                 var style_link = document.getElementById("page_style");
@@ -24,8 +26,10 @@
                 }
             }
 
-            window.onresize = layoutHandler;
-            layoutHandler();
+            window.addEventListener('resize', function(){
+                clearTimeout(resizeId);
+                resizeId = setTimeout(layoutHandler, 500);
+            });
         </script>
         <base href="/">
         <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>

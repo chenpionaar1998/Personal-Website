@@ -9,6 +9,8 @@
     <link id="page_style_share" href="css/regular/styles.css" type="text/css" rel="stylesheet">
     <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/projects_style.css">
     <script type="text/javascript">
+        var resizeId;
+
         function layoutHandler() {
             var style_link_share = document.getElementById("page_style_share");
             var style_link = document.getElementById("page_style");
@@ -27,8 +29,11 @@
             }
         }
 
-        window.onresize = layoutHandler;
-        layoutHandler();
+        window.addEventListener('resize', function(){
+            clearTimeout(resizeId);
+            resizeId = setTimeout(layoutHandler, 500);
+        });
+        
     </script>
     <script type="text/javascript" src="../js/slideshow.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
@@ -54,12 +59,32 @@
     </header>
     <div class='slideshow-container'>
         <div class="mySlides fade">
+            <div class="image-container0">
+                <img class="image" src="assets/content_picker.png">
+            </div>
+            <div class="table0">
+                <div class="text table-cell0">
+                    <b>Content picker on PowerPoint <br /></b>
+                    <br />
+                    <br />
+                    The <b>Content Picker</b> is a new dialog on PowerPoint for users to browse and search high quality stock images, cutout people images, 
+                    icons, and stickers and use them in their PowerPoint slides to enrich the design. This is a product that I contributed to during my second 
+                    Microsoft internship in Fall 2019. My role during the internship was to implement the search suggestion bar that provides the users with 
+                    a rich collection of search terms to help broaden the horizon of what the content picker can provide. I learned skills in TypeScript, React, 
+                    and Redux during the internship and worked closely with designers, engineers, and managers. To see this feature in action, visit
+                    <a class="inline-link" href="https://www.office.com/launch/powerpoint">PowerPoint</a> and go to "Insert > Images... > Stock images...". To learn more 
+                    information about this project, feel free to contact me via
+                    <a class="inline-link" href="https://www.linkedin.com/in/twc10/">LinkedIn</a>.  
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
             <div class="image-container1">
                 <img class="image" src="assets/inspoapp.png">
             </div>
             <div class="table1">
                 <div class="text table-cell1">
-                    <b>Insop App <br /></b>
+                    <b>Inspo App <br /></b>
                     <br />
                     <br />
                     <b>Inspo App</b> is a web application that helps users with making plans collaboratively online with other users.
@@ -161,6 +186,7 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
     </div>
 </body>
 
