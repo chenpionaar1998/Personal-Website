@@ -40,10 +40,6 @@ div.contact_div > ul li {
     display: inline-block;
 }
 
-li.email_div, li.github_div {
-    margin-left: 60px;
-}
-
 ul {
     margin:0px;
     padding:0px;
