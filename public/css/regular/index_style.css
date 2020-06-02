@@ -26,3 +26,7 @@ p.index_content {
     font-weight: lighter;
     text-align: center;
 }
+
+.text_area {
+    height: 350px;
+}

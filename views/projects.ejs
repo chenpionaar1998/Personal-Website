@@ -6,35 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dean Chiu - Projects</title>
     <base href="/">
-    <link id="page_style_share" href="css/regular/styles.css" type="text/css" rel="stylesheet">
-    <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/projects_style.css">
-    <script type="text/javascript">
-        var resizeId;
-
-        function layoutHandler() {
-            var style_link_share = document.getElementById("page_style_share");
-            var style_link = document.getElementById("page_style");
-
-            if (window.innerWidth < 800) {
-                style_link_share.setAttribute("href", "css/mobile/styles_mobile.css");
-                style_link.setAttribute("href", "css/mobile/projects_style_mobile.css");
-            }
-            else if (window.innerWidth < 1000) {
-                style_link_share.setAttribute("href", "css/regular/styles.css");
-                style_link.setAttribute("href", "css/regular/projects_style_medium.css");
-            }
-            else {
-                style_link_share.setAttribute("href", "css/regular/styles.css");
-                style_link.setAttribute("href", "css/regular/projects_style.css");
-            }
-        }
-
-        window.addEventListener('resize', function(){
-            clearTimeout(resizeId);
-            resizeId = setTimeout(layoutHandler, 100);
-        });
-        
-    </script>
+    <link href="css/regular/styles.css" media="screen and (min-width: 800px)" type="text/css" rel="stylesheet">
+    <link href="css/mobile/styles_mobile.css" media="screen and (max-width: 799px)" type="text/css" rel="stylesheet">
+    <link href="css/regular/projects_style.css" media="screen and (min-width: 1000px)" rel="stylesheet" type="text/css" >
+    <link href="css/regular/projects_style_medium.css" media="screen and (min-width: 800px) and (max-width: 1000px)" rel="stylesheet" type="text/css" >
+    <link href="css/mobile/projects_style_mobile.css" media="screen and (max-width: 799px)" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="../js/slideshow.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
 </head>
@@ -60,7 +36,7 @@
     <div class='slideshow-container'>
         <div class="mySlides fade">
             <div class="image-container0">
-                <img class="image" src="assets/content_picker.png">
+                <img class="image" src="assets/content_picker.png" loading="lazy">
             </div>
             <div class="table0">
                 <div class="text table-cell0">
@@ -80,7 +56,7 @@
         </div>
         <div class="mySlides fade">
             <div class="image-container1">
-                <img class="image" src="assets/inspoapp.png">
+                <img class="image" src="assets/inspoapp.png" loading="lazy">
             </div>
             <div class="table1">
                 <div class="text table-cell1">
@@ -99,7 +75,7 @@
         </div>
         <div class="mySlides fade">
             <div class="image-container2">
-                <img class="image" src="assets/officelens.png">
+                <img class="image" src="assets/officelens.png" loading="lazy">
             </div>
             <div class="table2">
                 <div class="text table-cell2">
@@ -119,7 +95,7 @@
         </div>
         <div class="mySlides fade">
             <div class="image-container3">
-                <img class="image" src="assets/code_u.png">
+                <img class="image" src="assets/code_u.png" loading="lazy">
             </div>
             <div class="table3">
                 <div class="text table-cell3">
@@ -143,7 +119,7 @@
         </div>
         <div class="mySlides fade">
             <div class="image-container4">
-                <img class="image" src="assets/network_tracing.jpg">
+                <img class="image" src="assets/network_tracing.jpg" loading="lazy">
             </div>
             <div class="table4">
                 <div class="text table-cell4">
@@ -161,7 +137,7 @@
         </div>
         <div class="mySlides fade">
             <div class="image-container5">
-                <img class="image" src="assets/roids.png">
+                <img class="image" src="assets/roids.png" loading="lazy">
             </div>
             <div class="table5">
                 <div class="text table-cell5">

@@ -4,30 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
         <title>Dean Chiu - Contacts</title>
-        <link id="page_style_share" rel="stylesheet" type="text/css" href="css/regular/styles.css">
-        <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/contacts_style.css">
-        <script type="text/javascript">
-            var resizeId;
-
-            function layoutHandler() {
-                var style_link_share = document.getElementById("page_style_share");
-                var style_link = document.getElementById("page_style");
-
-                if (window.innerWidth < 500) {
-                    style_link_share.setAttribute("href", "css/mobile/styles_mobile.css");
-                    style_link.setAttribute("href", "css/mobile/contacts_style_mobile.css");
-                }
-                else {
-                    style_link_share.setAttribute("href", "css/regular/styles.css");
-                    style_link.setAttribute("href", "css/regular/contacts_style.css");
-                }
-            }
-
-            window.addEventListener('resize', function(){
-                clearTimeout(resizeId);
-                resizeId = setTimeout(layoutHandler, 100);
-            });
-        </script>
+        <link href="css/regular/styles.css" media="screen and (min-width: 800px)" type="text/css" rel="stylesheet">
+        <link href="css/mobile/styles_mobile.css" media="screen and (max-width: 799px)" type="text/css" rel="stylesheet">
+        <link href="css/regular/contacts_style.css" media="screen and (min-width: 800px)" rel="stylesheet" type="text/css" >
+        <link href="css/mobile/contacts_style_mobile.css" media="screen and (max-width: 799px)" rel="stylesheet" type="text/css" >
         <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
         <base href="/">
     </head>

@@ -16,16 +16,7 @@
   overflow: hidden;
 }
 
-.image-container0 {
-  width: 50%;
-  height: 500px;
-  float: left;
-  text-align: center;
-  display: inline-flex;
-  padding-left: 5%;
-}
-
-.image-container1 {
+.image-container0, .image-container1, .image-container2, .image-container3, .image-container4, .image-container5 {
   width: 50%;
   height: 500px;
   float: left;
@@ -35,38 +26,10 @@
 }
 
 .image-container2 {
-  width: 50%;
-  height: 500px;
-  float: left;
-  text-align: center;
-  display: inline-flex;
   padding-left: 15%;
 }
 
-.image-container3 {
-  width: 50%;
-  height: 500px;
-  float: left;
-  text-align: center;
-  display: inline-flex;
-  padding-left: 5%;
-}
-
-.image-container4 {
-  width: 50%;
-  height: 500px;
-  float: left;
-  text-align: center;
-  display: inline-flex;
-  padding-left: 5%;
-}
-
 .image-container5 {
-  width: 50%;
-  height: 500px;
-  float: left;
-  text-align: center;
-  display: inline-flex;
   padding-left: 10%;
 }
 
@@ -84,82 +47,21 @@
   width: 35%
 }
 
-.table0 {
+.table0, .table1, .table2, .table3, .table4, .table5 {
   display: table;
   height: 500px;
   overflow: hidden;
   width: 50%;
 }
 
-.table1 {
-  display: table;
-  height: 500px;
-  overflow: hidden;
-  width: 50%;
-}
-
-.table2 {
-  display: table;
-  height: 500px;
-  overflow: hidden;
-  width: 50%;
-}
-
-.table3 {
-  display: table;
-  height: 500px;
-  overflow: hidden;
-  width: 50%;
-}
-
-.table4 {
-  display: table;
-  height: 500px;
-  overflow: hidden;
-  width: 50%;
-}
-
-.table5 {
-  display: table;
-  height: 500px;
-  overflow: hidden;
-  width: 50%;
-}
-
-.table-cell0 {
+.table-cell0, .table-cell1, .table-cell2, .table-cell3, .table-cell4, .table-cell5 {
   display: table-cell;
   vertical-align: middle;
   width: 55%;
 }
 
-.table-cell1 {
-  display: table-cell;
-  vertical-align: middle;
-  width: 55%;
-}
-
-.table-cell2 {
-  display: table-cell;
-  vertical-align: middle;
+.table-cell2, .table-cell3 {
   width: 45%;
-}
-
-.table-cell3 {
-  display: table-cell;
-  vertical-align: middle;
-  width: 45%;
-}
-
-.table-cell4 {
-  display: table-cell;
-  vertical-align: middle;
-  width: 55%;
-}
-
-.table-cell5 {
-  display: table-cell;
-  vertical-align: middle;
-  width: 55%;
 }
 
 /* Caption text */
@@ -202,21 +104,4 @@
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 

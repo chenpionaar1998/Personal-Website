@@ -25,3 +25,8 @@ p.index_content {
     margin-right: 30px;
     margin-left: 30px;
 }
+
+.text_area {
+    margin-top: 5rem; 
+    margin-bottom: 5rem;
+}

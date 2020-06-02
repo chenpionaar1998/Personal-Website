@@ -3,34 +3,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dean Chiu - Hello</title>
-        <link id="page_style_share" href="css/regular/styles.css" type="text/css" rel="stylesheet">
-        <link id="page_style" rel="stylesheet" type="text/css" href="css/regular/index_style.css">
-        <script type="text/javascript">
-            var resizeId;
-
-            function layoutHandler() {
-                var style_link_share = document.getElementById("page_style_share");
-                var style_link = document.getElementById("page_style");
-
-                if (window.innerWidth < 700) {
-                    style_link_share.setAttribute("href", "css/mobile/styles_mobile.css");
-                    style_link.setAttribute("href", "css/mobile/index_style_mobile.css");
-                }
-                else if (window.innerWidth < 1200) {
-                    style_link_share.setAttribute("href", "css/regular/styles.css");
-                    style_link.setAttribute("href", "css/regular/index_style_medium.css");
-                }
-                else {
-                    style_link_share.setAttribute("href", "css/regular/styles.css");
-                    style_link.setAttribute("href", "css/regular/index_style.css");
-                }
-            }
-
-            window.addEventListener('resize', function(){
-                clearTimeout(resizeId);
-                resizeId = setTimeout(layoutHandler, 100);
-            });
-        </script>
+        <link href="css/regular/styles.css" media="screen and (min-width: 800px)" type="text/css" rel="stylesheet">
+        <link href="css/mobile/styles_mobile.css" media="screen and (max-width: 799px)" type="text/css" rel="stylesheet">
+        <link href="css/regular/index_style.css" media="screen and (min-width: 1000px)" rel="stylesheet" type="text/css" >
+        <link href="css/regular/index_style_medium.css" media="screen and (min-width: 800px) and (max-width: 1000px)" rel="stylesheet" type="text/css" >
+        <link href="css/mobile/index_style_mobile.css" media="screen and (max-width: 799px)" rel="stylesheet" type="text/css" >
         <base href="/">
         <link href='https://fonts.googleapis.com/css?family=Cabin|Work+Sans:350' rel='stylesheet' type='text/css'>
     </head>
@@ -53,7 +30,7 @@
         </header>
         <div class="body_div">
             <img class="person_img" src="assets/Person.jpg">
-            <div style="display: table; height: 350px; overflow: hidden;">
+            <div class="text_area" style="display: table; overflow: hidden;">
                 <div style="display: table-cell; vertical-align: middle;">
                     <p class="index_content">
                             Hi there,<br>
